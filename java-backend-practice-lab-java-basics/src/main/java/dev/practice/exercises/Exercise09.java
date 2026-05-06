@@ -1,6 +1,6 @@
 package dev.practice.exercises;
 
-public class Exercise09 {
+public class    Exercise09 {
 
     public static void run() {
         System.out.println(calculate(10, 5, '+'));
@@ -13,26 +13,47 @@ public class Exercise09 {
 
     public static double add(double firstNumber, double secondNumber) {
         // TODO: Add two numbers.
-        return 0.0;
+        return firstNumber+secondNumber;
     }
 
     public static double subtract(double firstNumber, double secondNumber) {
         // TODO: Subtract two numbers.
-        return 0.0;
+        return firstNumber-secondNumber;
     }
 
     public static double multiply(double firstNumber, double secondNumber) {
         // TODO: Multiply two numbers.
-        return 0.0;
+        return firstNumber*secondNumber;
     }
 
     public static double divide(double firstNumber, double secondNumber) {
         // TODO: Divide two numbers. Think about division by zero.
-        return 0.0;
+
+        return firstNumber/secondNumber;
     }
 
     public static String calculate(double firstNumber, double secondNumber, char operator) {
         // TODO: Use the operator to choose the correct calculation.
-        return "";
+        switch (operator)
+        {
+            case '+':
+                return String.valueOf(add(firstNumber,secondNumber));
+            case '-':
+                return String.valueOf(subtract(firstNumber,secondNumber));
+            case '*':
+                return String.valueOf(multiply(firstNumber,secondNumber));
+            case '/':
+                if (secondNumber!=0)
+                {
+                    return String.valueOf(divide(firstNumber,secondNumber));
+                }
+                else
+                {
+                    return "Error: Division by zero";
+                }
+            default:
+                return "Error: Invalid operator";
+        }
+
     }
 }
