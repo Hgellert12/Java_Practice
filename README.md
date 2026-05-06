@@ -64,22 +64,6 @@ src/
                     └── TextUtils.java
 ```
 
-## Commit suggestion
-
-Commit after every exercise or after every small milestone.
-
-Example commit messages:
-
-```text
-Complete exercise 01 greeting formatter
-Complete exercise 02 price calculator
-Refactor exercise 03 validation logic
-Improve naming in exercise 04
-Add helper methods for exercise 05
-```
-
----
-
 # Exercises
 
 ## Exercise 01: Greeting Formatter
@@ -174,7 +158,6 @@ Requirements:
 - Create a method called `analyzeText`.
 - Create helper methods: `countVowels`, `countUppercaseLetters`, `countLowercaseLetters`, `countWords`.
 - Ignore extra spaces when counting words.
-- Extra challenge: also count consonants.
 
 ## Exercise 09: Basic Calculator
 
