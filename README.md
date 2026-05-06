@@ -158,7 +158,6 @@ Requirements:
 - Create a method called `analyzeText`.
 - Create helper methods: `countVowels`, `countUppercaseLetters`, `countLowercaseLetters`, `countWords`.
 - Ignore extra spaces when counting words.
-- Extra challenge: also count consonants.
 
 ## Exercise 09: Basic Calculator
 
