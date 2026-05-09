@@ -15,7 +15,233 @@ Each branch follows this pattern:
 3. I implement the solution manually.
 4. I commit my progress exercise by exercise or milestone by milestone.
 5. Later branches build on concepts learned in earlier branches.
+6. After I am done with a branch I put every excercise in the main java file and merge it to main
 
 The goal is not to copy finished solutions, but to understand and implement the code myself.
 
 ---
+
+# Branch: Java Basics and Clean Code
+
+## Branch goal
+
+This branch focuses on strengthening Java fundamentals while practicing clean, readable code.
+
+The goal is not to build a complex application yet. The goal is to become comfortable writing small Java programs, organizing logic into methods, using clear names, avoiding duplication, and improving code step by step.
+
+This branch is the foundation for all later branches.
+
+## How to run
+
+This starter codebase uses plain Java and Maven.
+
+```bash
+mvn clean compile
+mvn exec:java
+```
+
+To run a specific exercise, open `src/main/java/dev/practice/Main.java` and change the exercise being called.
+
+Example:
+
+```java
+Exercise01.run();
+```
+
+# Exercises
+
+## Exercise 01: Greeting Formatter
+
+Practice variables, strings, and simple method extraction.
+
+Requirements:
+
+- Use separate variables for first name, last name, and age.
+- Create a method called `formatFullName`.
+- Create a method called `printGreeting`.
+- Avoid putting all logic directly inside `main`.
+- Extra challenge: handle extra spaces in the first name or last name.
+
+## Exercise 02: Simple Price Calculator
+
+Practice numbers, arithmetic, and method return values.
+
+Requirements:
+
+- Use a `double` for price.
+- Use a `double` for tax rate.
+- Create a method called `calculateFinalPrice`.
+- Create a method called `printPriceSummary`.
+- Extra challenge: round the final price to two decimal places.
+
+## Exercise 03: Even or Odd Checker
+
+Practice conditionals and boolean methods.
+
+Requirements:
+
+- Create a method called `isEven`.
+- Create a method called `printEvenOddResult`.
+- Test the method with at least five numbers.
+- Include zero and a negative number in your tests.
+- Extra challenge: print whether each number is also positive, negative, or zero.
+
+## Exercise 04: Age Category Checker
+
+Practice `if`, `else if`, and clean branching logic.
+
+Requirements:
+
+- Create a method called `getAgeCategory`.
+- Create a method called `isValidAge`.
+- Invalid ages should return or print `"Invalid age"`.
+- Test at least six different ages.
+- Extra challenge: make the category rules easy to change later.
+
+## Exercise 05: Password Strength Checker
+
+Practice strings, conditionals, and validation methods.
+
+Requirements:
+
+- Create a method called `getPasswordStrength`.
+- Create helper methods: `containsNumber`, `containsUppercaseLetter`.
+- Test at least five passwords.
+- Avoid duplicated validation logic.
+- Extra challenge: add a rule for special characters.
+
+## Exercise 06: Multiplication Table Generator
+
+Practice loops and formatted output.
+
+Requirements:
+
+- Create a method called `printMultiplicationTable`.
+- The method should accept the number and the maximum multiplier.
+- Use a loop.
+- Do not hardcode all lines manually.
+- Extra challenge: print multiplication tables for numbers 1 through 10.
+
+## Exercise 07: Number Range Summary
+
+Practice loops, counters, sums, and simple calculations.
+
+Requirements:
+
+- Create a method called `printRangeSummary`.
+- Create helper methods where useful.
+- Handle cases where the start number is greater than the end number.
+- Extra challenge: allow the method to work in both ascending and descending order.
+
+## Exercise 08: Simple Text Analyzer
+
+Practice strings, loops, and helper methods.
+
+Requirements:
+
+- Create a method called `analyzeText`.
+- Create helper methods: `countVowels`, `countUppercaseLetters`, `countLowercaseLetters`, `countWords`.
+- Ignore extra spaces when counting words.
+
+## Exercise 09: Basic Calculator
+
+Practice methods, conditionals, and clean control flow.
+
+Requirements:
+
+- Create methods: `add`, `subtract`, `multiply`, `divide`, `calculate`.
+- The `calculate` method should receive two numbers and an operator.
+- Handle division by zero.
+- Handle invalid operators.
+- Extra challenge: return a meaningful error message instead of printing directly inside every method.
+
+## Exercise 10: Simple Menu System
+
+Practice loops, conditionals, and organizing code into methods.
+
+Requirements:
+
+- Create a method called `printMenu`.
+- Create a method called `handleMenuOption`.
+- Use a loop to simulate the menu running multiple times.
+- Include an exit option.
+- Handle invalid options.
+- Extra challenge: use constants for menu option numbers.
+
+## Exercise 11: Student Grade Evaluator
+
+Practice numeric logic, validation, and readable methods.
+
+Requirements:
+
+- Create a method called `getGrade`.
+- Create a method called `isValidScore`.
+- Invalid scores should return `"Invalid score"`.
+- Test boundary values such as `0`, `59`, `60`, `89`, `90`, and `100`.
+- Extra challenge: add `+` and `-` grades, such as `A-`, `B+`, etc.
+
+## Exercise 12: Username Generator
+
+Practice strings, formatting, and defensive coding.
+
+Requirements:
+
+- Create a method called `generateUsername`.
+- Convert the username to lowercase.
+- Use the first letter of the first name.
+- Use the full last name.
+- Use the last two digits of the birth year.
+- Handle extra spaces.
+- Extra challenge: handle missing or empty names safely.
+
+## Exercise 13: Refactor Messy Code
+
+Practice clean code and refactoring.
+
+Requirements:
+
+- First write the logic in one long method.
+- Then refactor it into smaller methods: `calculateSubtotal`, `calculateDiscount`, `calculateTax`, `calculateTotal`.
+- Use clear variable names.
+- Avoid duplicated calculations.
+- Extra challenge: add validation for negative prices, quantities, tax rates, or discounts.
+
+## Exercise 14: Small Utility Class
+
+Practice creating reusable helper methods.
+
+Requirements:
+
+- Create a utility class called `TextUtils`.
+- Utility methods should be `static`.
+- The class should not need to be instantiated.
+- Test each method from an exercise class or from `Main`.
+- Handle `null` values where appropriate.
+- Extra challenge: make the constructor private so the utility class cannot be instantiated.
+
+Suggested methods:
+
+```java
+isBlank(String text)
+capitalize(String text)
+reverse(String text)
+containsIgnoreCase(String text, String searchTerm)
+countOccurrences(String text, char character)
+```
+
+## Exercise 15: Mini Console Report Generator
+
+Combine everything from this branch into one small program.
+
+Requirements:
+
+- Reuse logic from previous exercises where possible.
+- Split the program into small methods.
+- Avoid duplicated code.
+- Use clear names.
+- Keep `main` short and readable.
+- Extra challenge: add validation errors and print them before generating the report.
+
+---
+
+
