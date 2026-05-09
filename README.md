@@ -242,6 +242,92 @@ Requirements:
 - Keep `main` short and readable.
 - Extra challenge: add validation errors and print them before generating the report.
 
----
+## Exercise 16: User Profile Model
 
+Create a `UserProfile` class with fields for first name, last name, email, and age.
 
+Practice creating a basic domain object with constructor, getters, setters, and a method that returns the full name.
+
+## Exercise 17: Product Model
+
+Create a `Product` class with name, price, stock quantity, and active status.
+
+Practice validation and simple domain methods such as checking whether a product is available.
+
+## Exercise 18: Bank Account Model
+
+Create a `BankAccount` class with owner name, account number, and balance.
+
+Practice behavior inside objects using methods such as deposit, withdraw, and print summary.
+
+## Exercise 19: Book Model
+
+Create a `Book` class with title, author, page count, and borrowed status.
+
+Practice object state changes using borrow and return methods.
+
+## Exercise 20: Student Model
+
+Create a `Student` class with name and scores.
+
+Practice calculating average score, highest score, and pass/fail status.
+
+## Exercise 21: Address and Customer Relationship
+
+Create an `Address` class and a `Customer` class that owns an address.
+
+Practice object composition.
+
+## Exercise 22: Order and Order Item
+
+Create an `OrderItem` class and a `SimpleOrder` class.
+
+Practice modeling a one-to-many relationship and calculating totals.
+
+## Exercise 23: Invoice Model
+
+Create an `Invoice` class with invoice number, customer name, subtotal, tax rate, and paid status.
+
+Practice business methods such as calculate total, mark paid, and print invoice.
+
+## Exercise 24: Task Model
+
+Create a `Task` class with title, description, priority, and completed status.
+
+Practice changing object state and writing clean status methods.
+
+## Exercise 25: Employee Model
+
+Create an `Employee` class with name, role, salary, and department.
+
+Practice salary raises, role changes, and formatted employee summaries.
+
+## Exercise 26: Shopping Cart
+
+Create a `CartItem` class and a `ShoppingCart` class.
+
+Practice adding items, removing items, calculating totals, and checking whether the cart is empty.
+
+## Exercise 27: Library Member
+
+Create a `LibraryMember` class that can borrow and return books.
+
+Practice relationships between member objects and book objects.
+
+## Exercise 28: Simple Service Class
+
+Create a `UserService` class that creates, validates, and prints user profiles.
+
+Practice separating business logic from domain objects.
+
+## Exercise 29: Mini Domain System
+
+Create a small customer order system using `Customer`, `Product`, `SimpleOrder`, and `OrderItem`.
+
+Practice combining several models together.
+
+## Exercise 30: Object Modeling Refactor Challenge
+
+Start with messy data stored in separate variables, then refactor it into proper classes.
+
+Practice identifying which data belongs together and moving behavior into the right object.
