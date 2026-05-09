@@ -15,7 +15,7 @@ Each branch follows this pattern:
 3. I implement the solution manually.
 4. I commit my progress exercise by exercise or milestone by milestone.
 5. Later branches build on concepts learned in earlier branches.
-6. After I am done with a branch I put every excercise in the main java file and merge it to main
+6. After I am done with a branch I merge it to main
 
 The goal is not to copy finished solutions, but to understand and implement the code myself.
 
