@@ -48,23 +48,6 @@ Example:
 Exercise01.run();
 ```
 
-## Project structure
-
-```text
-src/
-└── main/
-    └── java/
-        └── dev/
-            └── practice/
-                ├── Main.java
-                ├── exercises/
-                │   ├── Exercise01.java
-                │   ├── Exercise02.java
-                │   └── ...
-                └── utils/
-                    └── TextUtils.java
-```
-
 # Exercises
 
 ## Exercise 01: Greeting Formatter
