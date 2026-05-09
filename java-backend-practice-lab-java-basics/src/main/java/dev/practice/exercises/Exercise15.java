@@ -1,5 +1,7 @@
 package dev.practice.exercises;
 
+import java.time.LocalDateTime;
+
 public class Exercise15 {
 
     public static void run() {
@@ -30,5 +32,10 @@ public class Exercise15 {
         // Exercise05.getPasswordStrength
         // Exercise08 text analysis helper methods
         // Exercise12.generateUsername
+        Exercise01.formatFullName(firstName, lastName);
+        System.out.println(Exercise04.getAgeCategory(age));
+        System.out.println(Exercise05.getPasswordStrength(password));
+        Exercise08.analyzeText(bio);
+        System.out.println(Exercise12.generateUsername(firstName, lastName, LocalDateTime.now().getYear()-age));
     }
 }

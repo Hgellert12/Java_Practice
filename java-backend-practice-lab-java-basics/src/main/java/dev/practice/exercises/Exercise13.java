@@ -21,26 +21,38 @@ public class Exercise13 {
 
     public static double calculateSubtotal(double itemPrice, int quantity) {
         // TODO: Calculate subtotal.
-        return 0.0;
+        return itemPrice*quantity;
     }
 
     public static double calculateDiscount(double subtotal, double discountPercentage) {
         // TODO: Calculate discount amount.
-        return 0.0;
+        return subtotal*discountPercentage/100;
     }
 
     public static double calculateTax(double taxableAmount, double taxRate) {
         // TODO: Calculate tax amount.
-        return 0.0;
+        return taxableAmount*taxRate;
     }
 
     public static double calculateTotal(double itemPrice, int quantity, double taxRate, double discountPercentage, double shippingFee) {
         // TODO: Use the smaller methods to calculate the final total.
-        return 0.0;
+        if (!hasValidOrderInputs(itemPrice, quantity, taxRate, discountPercentage, shippingFee)) {
+            throw new IllegalArgumentException("Invalid order inputs");
+        }
+        double subtotal = calculateSubtotal(itemPrice, quantity);
+        double discount = calculateDiscount(subtotal, discountPercentage);
+        double taxableAmount = subtotal-discount;
+        double tax = calculateTax(taxableAmount,taxRate);
+        return taxableAmount+tax+shippingFee;
     }
 
     public static boolean hasValidOrderInputs(double itemPrice, int quantity, double taxRate, double discountPercentage, double shippingFee) {
         // TODO Extra challenge: Validate negative prices, quantities, tax rates, discounts, and shipping.
-        return false;
+        if (itemPrice<0 || quantity<0 || taxRate<0 || discountPercentage<0 || shippingFee<0)
+        {
+            return false;
+        }
+        return true;
     }
 }
+

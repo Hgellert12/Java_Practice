@@ -9,6 +9,6 @@ public class Main {
 
         // Change this line to run a different exercise.
         // Example: Exercise02.run();
-        Exercise10.run();
+        Exercise15.run();
     }
 }
